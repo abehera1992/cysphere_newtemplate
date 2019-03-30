@@ -8,6 +8,14 @@ body{
     overflow-x: hidden!important;
 }
 
+.red-color{
+	color:#BE2525;
+}
+
+.blue-color{
+    color:#1D2934;
+}
+
 .h3-list{
 	color: #BE2525;
 	font-size: 20px;
@@ -123,9 +131,7 @@ body{
 #about {
     padding: 50px 0;
 }
-.red-color{
-	color:#BE2525;
-}
+
 
 .title-text::before{
 
@@ -178,4 +184,167 @@ body{
 
 .about-col{
     padding: 0 20px;
+}
+
+
+/*-------------------------- SOLUTIONS ----------------------------------*/
+
+
+#solutions {
+    background: #f8f9fa;
+    padding: 50px 0px;
+}
+.solution-title-text {
+    margin: 70px 0px;
+}
+.solution-sidebar{
+	list-style: none;
+	padding:0;
+	background-color: rgb(28, 40, 51);
+}
+.solution-sidebar li {
+	border-bottom: 1px solid white;
+}
+.solution-sidebar li a{
+ text-decoration: none;
+  color: white!important;
+	padding: 12px 10px;
+	display:block;
+	cursor: pointer;
+}
+.solution-sidebar li a:visited {
+	color: white;
+}
+.solution-sidebar li a:hover, .solution-sidebar li .current {
+color: white;
+background-color: rgb(244, 80, 66);
+}
+
+.listing-display-prop {
+    display: none;
+    background: #fff;
+    border: 2px solid #fff; 
+}
+
+
+.sol-panel-body{
+    width: 100%; 
+    height: 390px;
+    padding: 10px;
+}
+/***********************************
+************************************
+Solutions div animation
+************************************
+***********************************/
+.animation-right {
+    margin-left: 40px;
+    animation: 1s ease-in-out 0s 1 slideInFromRight;
+  
+  }
+  
+  @keyframes slideInFromRight {
+    0% {
+      transform: skew(0deg) translateX(100%);
+      opacity: 0;
+    }
+    60% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: skew(0deg) translateX(0);
+      opacity: 1;
+    }
+  }
+
+/*-------------------------- SERVICES ----------------------------------*/
+
+
+  #services{
+	width:100%;
+	height: 652px;
+	margin-bottom:40px;
+}
+
+.deco{
+	font-family: 'Satisfy', cursive;
+	color:#BE2525;
+
+}
+.grid-container-services{
+	margin-top:30px;
+}
+
+.grid-col{
+	height: 430px;
+	border: 1px solid #fff;
+}
+
+.grid-col:hover .overlay {
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(244, 80, 66, 0.8);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+	opacity:0.7;
+}
+
+.text {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img-grid-1{
+	background:linear-gradient(to bottom,rgba(0,0,0, 0), rgba(54, 88, 120, 0.59)), url('../img/img-grid-1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+.img-grid-2{
+	background:linear-gradient(to bottom,rgba(0,0,0, 0), rgba(54, 88, 120, 0.59)), url('../img/img-grid-2.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.img-grid-3{
+	background:linear-gradient(to bottom,rgba(0,0,0, 0), rgba(54, 88, 120, 0.59)), url('../img/img-grid-3.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.img-grid-4{
+	background:linear-gradient(to bottom,rgba(0,0,0, 0), rgba(54, 88, 120, 0.59)), url('../img/img-grid-4.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+.img-grid-5{
+	background:linear-gradient(to bottom,rgba(0,0,0, 0), rgba(54, 88, 120, 0.59)), url('../img/img-grid-5.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
+}
+
+.img-grid-6{
+	background:linear-gradient(to bottom,rgba(0,0,0, 0), rgba(54, 88, 120, 0.59)), url('../img/img-grid-6.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover
 }
