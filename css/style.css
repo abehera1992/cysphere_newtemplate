@@ -21,6 +21,21 @@ body{
 	font-size: 20px;
 	font-weight: 600;
 }
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+blockquote {
+    padding: 10px 15px;
+    margin: 30px 10px 10px 10px !important;
+    font-size: 15px;
+    border-left: 5px solid RGBA(0, 0, 0, 0.18);
+}
 /* Custom scroll-bar styling */
 
 ::-webkit-scrollbar {
@@ -262,8 +277,11 @@ Solutions div animation
 
   #services{
 	width:100%;
-	height: 652px;
 	margin-bottom:40px;
+}
+
+.services-title-text{
+    margin: 70px 0px !important;
 }
 
 .deco{
@@ -347,4 +365,108 @@ Solutions div animation
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover
+}
+
+/*---------------------------- TESTIMONIALS ------------------------------*/
+
+#testimonials{
+    /* margin: 100px 0 !important; */
+    width: 100%;
+    background: #f8f9fa;
+}
+
+.testimonial-title-text{
+    position: relative;
+    top: 55px;
+    margin: 70px 0px !important;
+}
+
+
+.testimonial-client{
+    padding: 0 0 0 10px;
+}
+/*sonar wave exp*/
+
+
+.sonar-wrapper {
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    padding: 4rem 0;
+  }
+
+  /* The circle */
+.sonar-emitter {
+    position: relative;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 9999px;
+    background-color: rgb(244, 80, 66);
+  }
+  
+  /* the 'wave', same shape and size as its parent */
+  .sonar-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 9999px;
+    background-color: rgb(244, 80, 66);
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  /*
+  Animate!
+  NOTE: add browser prefixes where needed.
+*/
+.sonar-wave {
+    animation: sonarWave 1.5s linear infinite;
+  }
+  
+  @keyframes sonarWave {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+
+
+
+/*---------------------------- FOOTER ------------------------------*/
+
+footer {
+    padding: 10px 0 0 0;
+    background: #F2F3EB;
+}
+.footer{
+	padding-top: 10px;
+}
+
+.footer a {
+    color: #BE2525;
+}
+
+.footer__navigation li, .social-list li{
+	display: inline-block;
+}
+
+.footer__navigation li a
+{
+	display: inline-block;
+	color: #767676;
+	font-weight: 600;
+	font-variant-ligatures: common-ligatures;
+	font-size: 1.2em;
+	line-height: 1.625em;
+	margin-top: 0;
+	margin-bottom: 1.625em;
+	padding-right: 10px;
 }
