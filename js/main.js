@@ -1,6 +1,8 @@
 
 $(function() {
 
+	var scroll = new SmoothScroll('a[href*="#"]');
+
     $('#app-dev').click(function(event) {
         event.preventDefault();
         $('#applicationPlaceholder').show();

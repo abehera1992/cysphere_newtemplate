@@ -145,6 +145,7 @@ blockquote {
 
 #about {
     padding: 50px 0;
+    margin-bottom: 130px;
 }
 
 
@@ -207,7 +208,8 @@ blockquote {
 
 #solutions {
     background: #f8f9fa;
-    padding: 50px 0px;
+    padding: 50px 0;
+    margin-bottom: 130px;
 }
 .solution-title-text {
     margin: 70px 0px;
@@ -276,8 +278,9 @@ Solutions div animation
 
 
   #services{
-	width:100%;
-	margin-bottom:40px;
+    width:100%;
+    padding: 50px 0;
+	margin-bottom:130px;
 }
 
 .services-title-text{
@@ -372,13 +375,14 @@ Solutions div animation
 #testimonials{
     /* margin: 100px 0 !important; */
     width: 100%;
+    padding: 50px 0;
     background: #f8f9fa;
 }
 
 .testimonial-title-text{
     position: relative;
     top: 55px;
-    margin: 70px 0px !important;
+    margin: 20px 0px !important;
 }
 
 
@@ -437,6 +441,51 @@ Solutions div animation
       opacity: 0;
     }
   }
+/***********************************
+************************************
+Contact Us page Office location
+************************************
+***********************************/
+#contact{
+    width: 100%;
+    background: #fff;
+    margin-bottom: 130px;
+}
+
+.contact-us-title-text{
+    margin: 70px 0px;
+}
+.contact-us-location-container{
+	list-style-type: none;
+	padding:0;
+}
+
+.contact-us-location-container li{
+	display: inline-block;
+}
+.contact-us-location-container h4{
+	margin:0;
+	display: inline;
+}
+
+.inline-group{
+	display: inline-block;
+	width:300px;
+	margin: 5px 0px;
+	float:left;
+}
+.no-inline-group{
+		margin: 15px 0px;
+}
+.contact-us-icon-map{
+	color:#BE2626;
+}
+
+.address-content{
+	padding: 0 0 0 15px;
+	font-size: 16px;
+	line-height: 1.3em;
+}
 
 
 
