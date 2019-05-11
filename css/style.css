@@ -7,6 +7,9 @@ body{
     font-family: sans-serif;
     overflow-x: hidden!important;
 }
+*:focus {
+    outline: 0 !important;
+}
 
 .red-color{
 	color:#BE2525;
@@ -441,6 +444,21 @@ Solutions div animation
       opacity: 0;
     }
   }
+
+.card{
+    border:none !important;
+}
+
+.client-circle{
+    background-color: #F2F3EB;
+    height: 150px;
+    width: 100px;
+    border-radius: 100%;
+    margin: 10px 15px;
+}
+
+
+
 /***********************************
 ************************************
 Contact Us page Office location
@@ -485,6 +503,31 @@ Contact Us page Office location
 	padding: 0 0 0 15px;
 	font-size: 16px;
 	line-height: 1.3em;
+}
+#sendmessage{
+    display: none;
+}
+
+.form-control{
+    background: transparent;
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-radius: 0 !important;
+    outline: none !important;
+    border-bottom: 1px solid #BE2626 !important;
+    color:#BE2626;
+    
+}
+
+#submit-btn{
+    background-color: #BE2626;
+    border-color: transparent !important;
+
+}
+#submit-btn:hover{
+    background-color: #1D2934;
+    cursor: pointer;
 }
 
 

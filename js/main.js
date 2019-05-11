@@ -2,7 +2,10 @@
 $(function() {
 
 	var scroll = new SmoothScroll('a[href*="#"]');
-
+    var hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click", function() {
+      hamburger.classList.toggle("is-active");
+    });
     $('#app-dev').click(function(event) {
         event.preventDefault();
         $('#applicationPlaceholder').show();

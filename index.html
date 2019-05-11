@@ -8,6 +8,7 @@
 
             
             <link rel="stylesheet" href="css/style.css">
+            <link rel="stylesheet" href="css/hamburgers.css" rel="stylesheet">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
@@ -72,7 +73,7 @@
                             </div>
                     </div>
                     <div class="col-md-2 text-center">
-                   <img src="img/home2.png" class="img-fluid">
+                      <img src="img/home2.png" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -482,7 +483,31 @@
             </div>
          </div>
         </div>
-
+        <div class="row">
+          <div class="col-md-12 text-center">
+              <div class="more-client-collapse">
+                  <button class="hamburger hamburger--spin"  data-toggle="collapse" href="#multiCollapseExample1" type="button">
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+                    </button>
+              </div>
+          </div>
+          <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    <h6 class="card-subtitle mb-2 text-muted text-center">More of our clients...</h6>
+                      <div class="row">
+                        <div class="col-sm-2 client-circle"></div>
+                        <div class="col-sm-2 client-circle"></div>
+                        <div class="col-sm-2 client-circle"></div>
+                        <div class="col-sm-2 client-circle"></div>
+                        <div class="col-sm-2 client-circle"></div>
+                      </div>
+                </div>
+              </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -535,30 +560,22 @@
         </ul>
       </div>
 
-      <!-- <div class="col-md">
+       <div class="col-md">
         <div id="sendmessage">Your message has been sent. Thank you!</div>
         <div id="errormessage"></div>
-        <form role="form" method="post" class="contactForm">
+        <form role="form" method="post" id="contact-Form" action="main.php">
           <div class="form-group">
-            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-            <div class="validation"></div>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required/>
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-            <div class="validation"></div>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" required/>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-            <div class="validation"></div>
+            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" required></textarea>
           </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-            <div class="validation"></div>
-          </div>
-
-          <div class="text-center"><button id="submit" type="submit" class="btn btn-primary btn-lg">Send Message</button></div>
+          <div class="text-center"><button id="submit-btn" type="submit" class="btn btn-primary btn-lg">Send Message</button></div>
         </form>
-      </div>  -->
+      </div>  
 
     </div>
   </div>
